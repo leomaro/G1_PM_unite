@@ -1,5 +1,6 @@
-# G1_PM_unite
-Gruppe 1, VU Projektmanagement WiSe 2020 
+# Projekt u:nite
 
-Link zur Webseite: https://leomaro.github.io/G1_PM_unite/
+Offene Tasks -> To-do Liste checken oder Issues behandeln
+
+Link zur Webseite zum Beobachten von Veränderungen: https://leomaro.github.io/G1_PM_unite/
 
