@@ -36,7 +36,7 @@
                 <link href="../blog.css" rel="stylesheet">
 
 
-                <!--<link href="../open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">-->
+                <link href="../assets/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script type="text/javascript" src="../assets/dist/js/bootstrap.min.js"></script>
         </head>
@@ -81,35 +81,69 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav mr-auto">
                                                 <li class="nav-item active">
-                                                        <!--<span class="oi oi-action-undo" title="icon name"></span>-->
-                                                        <a class="nav-link" href="#">Aktualisieren</a>
+                                                        <a class="nav-link" href="#">
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/reload.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Aktualisieren</figcaption>
+                                                                </figure>
+                                                        </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <!--<span class="oi oi-action-undo" title="icon name"></span>-->
-                                                        <a class="nav-link" href="#">Schreiben</a>
+                                                        <a class="nav-link" href="#">
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/script.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Schreiben</figcaption>
+                                                                </figure>
+                                                        </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <!--<span class="oi oi-action-undo" title="icon name"></span>-->
-                                                        <a class="nav-link" href="#">Antworten</a>
+                                                        <a class="nav-link" href="#">
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/arrow-left.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Antworten</figcaption>
+                                                                </figure>
+                                                        </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <!--<span class="oi oi-action-undo" title="icon name"></span>-->
-                                                        <a class="nav-link" href="#">Weiterleiten</a>
+                                                        <a class="nav-link" href="#">
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/share.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Weiterleiten</figcaption>
+                                                                </figure>
+                                                        </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <!--<span class="oi oi-action-undo" title="icon name"></span>-->
-                                                        <a class="nav-link" href="#">Archivieren</a>
-                                                </li>
-                                                <li class="nav-item active">
-                                                        <!--<span class="oi oi-action-undo" title="icon name"></span>-->
-                                                        <a class="nav-link" href="#">Löschen</a>
+                                                        <a class="nav-link" href="#">
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/trash.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Löschen</figcaption>
+                                                                </figure>
+                                                        </a>
                                                 </li>
                                                 <li class="nav-item dropdown active">
                                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                Mehr...
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/bookmark.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Markieren</figcaption>
+                                                                </figure>
                                                         </a>
                                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <a class="dropdown-item" href="#">Action</a>
+                                                                <a class="dropdown-item" href="#">Als gelesen</a>
+                                                                <a class="dropdown-item" href="#">Als ungelesen</a>
+                                                                <div class="dropdown-divider"></div>
+                                                                <a class="dropdown-item" href="#">Als wichtig</a>
+                                                                <a class="dropdown-item" href="#">Als unwichtig</a>
+                                                        </div>
+                                                </li>
+                                                <li class="nav-item dropdown active">
+                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <figure class="text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/grid-three-up.svg" class="figure-img img-fluid" width="25px">
+                                                                        <figcaption>Mehr</figcaption>
+                                                                </figure>
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                <a class="dropdown-item" href="#">Archivieren</a>
                                                                 <a class="dropdown-item" href="#">Another action</a>
                                                                 <div class="dropdown-divider"></div>
                                                                 <a class="dropdown-item" href="#">Something else here</a>
@@ -118,7 +152,7 @@
                                         </ul>
                                         <form class="form-inline my-2 my-lg-0">
                                                 <input class="form-control mr-sm-2" type="search" placeholder="Postfach durchsuchen..." aria-label="Search">
-                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="../assets/open-iconic/svg/magnifying-glass.svg" width="16px"></button>
                                         </form>
                                 </div>
                         </nav>
@@ -126,79 +160,38 @@
                 <div class="container">
 
                 <div class="row">
-                        <div class="col">
+                        <div class="col-md-auto">
                                 <div class="table-responsive">
-                                        <table class="table table-striped table-sm table-hover">
+                                        <table class="table table-sm table-hover">
                                                 <thead class="thead-dark">
                                                         <tr>
-                                                                <th>Postfächer</th>
+                                                                <th>⠀Postfächer⠀⠀⠀⠀</th>
                                                         </tr>
                                                 </thead>
                                                 <tbody>
                                                         <tr>
-                                                                <td>Eingang</td>
+                                                                <td>⠀<img src="../assets/open-iconic/svg/inbox.svg" width="16px">⠀Eingang</td>
                                                         </tr>
                                                         <tr>
-                                                                <td>Entwürfe</td>
+                                                                <td>⠀<img src="../assets/open-iconic/svg/pencil.svg" width="16px">⠀Entwürfe</td>
                                                         </tr>
                                                         <tr>
-                                                                <td>Gesendet</td>
+                                                                <td>⠀<img src="../assets/open-iconic/svg/data-transfer-upload.svg" width="16px">⠀Gesendet</td>
                                                         </tr>
                                                         <tr>
-                                                                <td>Spam</td>
+                                                                <td>⠀<img src="../assets/open-iconic/svg/folder.svg" width="16px">⠀Archiviert</td>
                                                         </tr>
                                                         <tr>
-                                                                <td>Gelöscht</td>
+                                                                <td>⠀<img src="../assets/open-iconic/svg/box.svg" width="16px">⠀Spam</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>⠀<img src="../assets/open-iconic/svg/trash.svg" width="16px">⠀Gelöscht</td>
                                                         </tr>
                                                 </tbody>
                                         </table>
                                 </div>
                         </div>
                         <div class="col">
-                                <!--<div class="table-responsive">
-                                        <table class="table table-striped table-sm table-hover">
-                                                <thead>
-                                                        <tr>
-                                                                <th> </th>
-                                                                <th>Von</th>
-                                                                <th>Betreff</th>
-                                                                <th>Datum</th>
-                                                        </tr>
-                                                </thead>
-                                                <tbody>
-                                                        <tr>
-                                                                <td> </td>
-                                                                <td>Moritz Musterkollege</td>
-                                                                <td>HCI-Abgabe V2</td>
-                                                                <td>16.04.2021 11:23</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td> </td>
-                                                                <td>Moritz Musterkollege</td>
-                                                                <td>HCI-Abgabe</td>
-                                                                <td>13.04.2021 14:35</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td><b>•</b></td>
-                                                                <td>Voigt Christian</td>
-                                                                <td>[MOODLE] 2021S 051234-5 HCI</td>
-                                                                <td>12.04.2021 13:37</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td></td>
-                                                                <td>Voigt Christian</td>
-                                                                <td>[MOODLE] 2021S 051234-5 HCI</td>
-                                                                <td>12.04.2021 13:12</td>
-                                                        </tr>
-                                                        <tr>
-                                                                <td></td>
-                                                                <td><b>Weitere Elemente laden...</b></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                        </tr>
-                                                </tbody>
-                                        </table>
-                                </div>-->
                                 <table class="table-responsive">
                                         <table class="table table-striped table-sm table-hover">
                                                 <thead class="thead-dark">
@@ -211,28 +204,83 @@
                                                 </thead>
                                                 <tbody>
                                                         <tr>
-                                                                <td> </td>
-                                                                <td>Moritz Musterkollege</td>
-                                                                <td>HCI-Abgabe V2</td>
-                                                                <td>16.04.2021 11:23</td>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">notifications@github.com</p></td>
+                                                                <td><p class="text-break">HCI Projekt - Issue fixed</p></td>
+                                                                <td>28.12.2020 02:58</td>
                                                         </tr>
                                                         <tr>
-                                                                <td> </td>
-                                                                <td>Moritz Musterkollege</td>
-                                                                <td>HCI-Abgabe</td>
-                                                                <td>13.04.2021 14:35</td>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">notifications@github.com</p></td>
+                                                                <td><p class="text-break">HCI Projekt - Issue opened</p></td>
+                                                                <td>27.12.2020 23:47</td>
                                                         </tr>
                                                         <tr>
-                                                                <td><b>•</b></td>
-                                                                <td>Voigt Christian</td>
-                                                                <td>[MOODLE] 2021S 051234-5 HCI</td>
-                                                                <td>12.04.2021 13:37</td>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">Maria Mustermann</p></td>
+                                                                <td><p class="text-break">Aw: Aw: HCI-Abgabe</p></td>
+                                                                <td>23.12.2020 10:09</td>
                                                         </tr>
                                                         <tr>
-                                                                <td></td>
-                                                                <td>Voigt Christian</td>
-                                                                <td>[MOODLE] 2021S 051234-5 HCI</td>
-                                                                <td>12.04.2021 13:12</td>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">Moritz Musterkollege</p></td>
+                                                                <td><p class="text-break">Aw: HCI-Abgabe</p></td>
+                                                                <td>22.12.2020 17:02</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-open.svg" width="16px"></td>
+                                                                <td><p class="text-break"><b>Maria Mustermann</b></p></td>
+                                                                <td><p class="text-break"><b>HCI Projektantrag</b></p></td>
+                                                                <td><b>22.12.2020 14:22</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-open.svg" width="16px"></td>
+                                                                <td><p class="text-break">rektorat@univie.ac.at</p></td>
+                                                                <td><p class="text-break">Erholsame Festtage und einen motivierten Start ins neue Jahr!</p></td>
+                                                                <td>22.12.2020 11:58</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">OeH Uni Wien</p></td>
+                                                                <td><p class="text-break">+++ÖH Uni Wien: Home-Learning Befragung!+++</p></td>
+                                                                <td>17.12.2020 9:41</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">OeH Uni Wien</p></td>
+                                                                <td><p class="text-break">**ÖH Coronainfo Hochschulen**</p></td>
+                                                                <td>16.12.2020 15:37</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-open.svg" width="16px"></td>
+                                                                <td><p class="text-break">Moritz Musterkollege</p></td>
+                                                                <td><p class="text-break">HCI-Abgabe V2</p></td>
+                                                                <td>16.12.2020 11:23</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">Moritz Musterkollege</p></td>
+                                                                <td><p class="text-break">HCI-Abgabe</p></td>
+                                                                <td>13.12.2020 14:35</td>
+                                                        </tr>
+                                                        <!-- Gestrichen damits genau 10 Emails sind
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-open.svg" width="16px"></td>
+                                                                <td><p class="text-break">Voigt Christian</p></td>
+                                                                <td><p class="text-break">[MOODLE] 2021S 051234-5 HCI</p></td>
+                                                                <td>12.12.2020 13:37</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-open.svg" width="16px"></td>
+                                                                <td><p class="text-break">Voigt Christian</p></td>
+                                                                <td><p class="text-break">[MOODLE] 2021S 051234-5 HCI</p></td>
+                                                                <td>12.12.2020 13:12</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px"></td>
+                                                                <td><p class="text-break">oeh@oeh.univie.ac.at</p></td>
+                                                                <td><p class="text-break">Neues von deiner ÖH Uni Wien</p></td>
+                                                                <td>9.12.2020 16:04</td>
                                                         </tr>
                                                         <tr>
                                                                 <td></td>
@@ -240,6 +288,7 @@
                                                                 <td></td>
                                                                 <td></td>
                                                         </tr>
+                                                        -->
                                                 </tbody>
                                         </table>
                                 </div>
