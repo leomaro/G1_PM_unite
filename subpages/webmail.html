@@ -39,6 +39,67 @@
                 <link href="../assets/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
                 <script type="text/javascript" src="../assets/dist/js/bootstrap.min.js"></script>
+
+                <!-- Skript und CSS Code von https://bootstrap-menu.com/demos/multilevel.html -->
+                <script type="text/javascript">
+                        // jquery ready start
+                        $(document).ready(function() {
+                                // jQuery code
+
+                                //////////////////////// Prevent closing from click inside dropdown
+                                $(document).on('click', '.dropdown-menu', function (e) {
+                                        e.stopPropagation();
+                                });
+
+                                // make it as accordion for smaller screens
+                                if ($(window).width() < 992) {
+                                        $('.dropdown-menu a').click(function(e){
+                                                e.preventDefault();
+                                                if($(this).next('.submenu').length){
+                                                        $(this).next('.submenu').toggle();
+                                                }
+                                                $('.dropdown').on('hide.bs.dropdown', function () {
+                                                        $(this).find('.submenu').hide();
+                                                })
+                                        });
+                                }
+
+                        }); // jquery end
+                </script>
+
+                <style type="text/css">
+                        @media (min-width: 992px){
+                                .dropdown-menu .dropdown-toggle:after{
+                                        border-top: .3em solid transparent;
+                                        border-right: 0;
+                                        border-bottom: .3em solid transparent;
+                                        border-left: .3em solid;
+                                }
+
+                                .dropdown-menu .dropdown-menu{
+                                        margin-left:0; margin-right: 0;
+                                }
+
+                                .dropdown-menu li{
+                                        position: relative;
+                                }
+                                .nav-item .submenu{
+                                        display: none;
+                                        position: absolute;
+                                        left:100%; top:-7px;
+                                }
+                                .nav-item .submenu-left{
+                                        right:100%; left:auto;
+                                }
+
+                                .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+                                .dropdown-menu > li:hover > .submenu{
+                                        display: block;
+                                }
+                        }
+                </style>
+
+
         </head>
 
         <body>
@@ -81,74 +142,95 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav mr-auto">
                                                 <li class="nav-item active">
-                                                        <a class="nav-link" href="#">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/reload.svg" class="figure-img img-fluid" width="25px">
+                                                                        <img src="../assets/open-iconic/svg/reload.svg" class="figure-img img-fluid" width="24px">
                                                                         <figcaption>Aktualisieren</figcaption>
                                                                 </figure>
                                                         </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <a class="nav-link" href="#">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/script.svg" class="figure-img img-fluid" width="25px">
+                                                                        <img src="../assets/open-iconic/svg/script.svg" class="figure-img img-fluid" width="24px">
                                                                         <figcaption>Schreiben</figcaption>
                                                                 </figure>
                                                         </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <a class="nav-link" href="#">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/arrow-left.svg" class="figure-img img-fluid" width="25px">
+                                                                        <img src="../assets/open-iconic/svg/arrow-left.svg" class="figure-img img-fluid" width="24px">
                                                                         <figcaption>Antworten</figcaption>
                                                                 </figure>
                                                         </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <a class="nav-link" href="#">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/share.svg" class="figure-img img-fluid" width="25px">
+                                                                        <img src="../assets/open-iconic/svg/share.svg" class="figure-img img-fluid" width="24px">
                                                                         <figcaption>Weiterleiten</figcaption>
                                                                 </figure>
                                                         </a>
                                                 </li>
                                                 <li class="nav-item active">
-                                                        <a class="nav-link" href="#">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/trash.svg" class="figure-img img-fluid" width="25px">
+                                                                        <img src="../assets/open-iconic/svg/trash.svg" class="figure-img img-fluid" width="24px">
                                                                         <figcaption>Löschen</figcaption>
                                                                 </figure>
                                                         </a>
                                                 </li>
-                                                <li class="nav-item dropdown active">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                                <li class="nav-item active">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/bookmark.svg" class="figure-img img-fluid" width="25px">
-                                                                        <figcaption>Markieren</figcaption>
+                                                                        <img src="../assets/open-iconic/svg/action-undo.svg" class="figure-img img-fluid" width="24px">
+                                                                        <figcaption>Undo</figcaption>
                                                                 </figure>
                                                         </a>
-                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <a class="dropdown-item" href="#">Als gelesen</a>
-                                                                <a class="dropdown-item" href="#">Als ungelesen</a>
-                                                                <div class="dropdown-divider"></div>
-                                                                <a class="dropdown-item" href="#">Als wichtig</a>
-                                                                <a class="dropdown-item" href="#">Als unwichtig</a>
-                                                        </div>
                                                 </li>
-                                                <li class="nav-item dropdown active">
-                                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                                <li class="nav-item active">
+                                                        <a class="nav-link text-dark" href="#">
                                                                 <figure class="text-center figure">
-                                                                        <img src="../assets/open-iconic/svg/grid-three-up.svg" class="figure-img img-fluid" width="25px">
+                                                                        <img src="../assets/open-iconic/svg/action-redo.svg" class="figure-img img-fluid" width="24px">
+                                                                        <figcaption>Redo</figcaption>
+                                                                </figure>
+                                                        </a>
+                                                </li>
+
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown">
+                                                                <figure class="text-dark text-center figure">
+                                                                        <img src="../assets/open-iconic/svg/grid-three-up.svg" class="figure-img img-fluid" width="24px">
                                                                         <figcaption>Mehr</figcaption>
                                                                 </figure>
                                                         </a>
-                                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <a class="dropdown-item" href="#">Archivieren</a>
-                                                                <a class="dropdown-item" href="#">Another action</a>
-                                                                <div class="dropdown-divider"></div>
-                                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                        </div>
+
+                                                        <ul class="dropdown-menu">
+                                                                <li>
+                                                                        <a class="dropdown-item dropdown-toggle" href="#">
+                                                                                <img src="../assets/open-iconic/svg/bookmark.svg" width="16px">⠀Markieren
+                                                                        </a>
+                                                                        <ul class="submenu dropdown-menu">
+                                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/envelope-open.svg" width="16px">⠀Gelesen</a></li>
+                                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/envelope-closed.svg" width="16px">⠀Ungelesen</a></li>
+                                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/flag.svg" width="16px">⠀Wichtig</a></li>
+                                                                                <li><a class="dropdown-item" href="#">⠀⠀ Unwichtig</a></li>
+                                                                        </ul>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/folder.svg" width="16px">⠀Archivieren</a></li>
+                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/data-transfer-download.svg" width="16px">⠀Download</a></li>
+
+                                                                <li><div class="dropdown-divider"></div></li>
+                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/person.svg" width="16px">⠀Kontakte</a></li>
+                                                                <li><div class="dropdown-divider"></div></li>
+                                                                <li><a class="dropdown-item" href="#"><img src="../assets/open-iconic/svg/cog.svg" width="16px">⠀Einstellungen</a></li>
+                                                        </ul>
                                                 </li>
+
+
                                         </ul>
                                         <form class="form-inline my-2 my-lg-0">
                                                 <input class="form-control mr-sm-2" type="search" placeholder="Postfach durchsuchen..." aria-label="Search">
@@ -282,13 +364,13 @@
                                                                 <td><p class="text-break">Neues von deiner ÖH Uni Wien</p></td>
                                                                 <td>9.12.2020 16:04</td>
                                                         </tr>
+                                                        -->
                                                         <tr>
                                                                 <td></td>
                                                                 <td><b>Weitere Elemente laden...</b></td>
                                                                 <td></td>
                                                                 <td></td>
                                                         </tr>
-                                                        -->
                                                 </tbody>
                                         </table>
                                 </div>
@@ -300,12 +382,16 @@
 
                 <br>
                 <main role="main" class="container">
-                        <div class="jumbotron p-4 p-md-5 text-black rounded bg-light">
-                                <div class="px-0">
-                                        <p class="lead my-0"><b> Maria Mustermann </b></p>
-                                        <p class="lead my-0">An: <b>Moritz Musterkollege</b></p>
-                                        <h2 class="display-6 my-2">HCI Projektantrag</h1><br>
-                                        <p class="lead my-2">Liebe Kollegen, <br><br>
+                        <div class="jumbotron p-md-5 text-black rounded bg-light">
+                                        <div class="row">
+                                                <p class="lead my-0 mr-auto"><b> Maria Mustermann</b> <br> An: <b>Moritz Musterkollege</b></p>
+                                                <p class="text-right lead disabled">22.12.2020</p>
+                                        </div>
+                                        <div class="row border-bottom">
+                                                <h2 class="display-6">HCI Projektantrag</h1>
+                                        </div>
+                                        <div class="row">
+                                        <p class="lead mt-4">Liebe Kollegen, <br><br>
 
                                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br><br>
 
@@ -315,7 +401,7 @@
 
                                         Liebe Grüße, <br>
                                         Maria</p>
-                                </div>
+                                        </div>
                         </div>
 
 
