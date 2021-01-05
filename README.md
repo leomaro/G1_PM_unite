@@ -1,8 +1,7 @@
 # Projekt u:nite
 
-Voraussichtliche Deadline und nächste Besprechung: Montag 4.1.2012, 14:00
+Dieses Projekt wurde von Studenten im Rahmen eines Kurses der Universität Wien erstellt.
 
-Offene Tasks -> To-do Liste checken oder Issues behandeln
+Weitere Informationen dazu stehen im Wiki zur Verfügung.
 
-Link zur Webseite zum Beobachten von Veränderungen: https://leomaro.github.io/G1_PM_unite/
-
+Link zur Webseite unseres Projekts: https://leomaro.github.io/G1_PM_unite/
